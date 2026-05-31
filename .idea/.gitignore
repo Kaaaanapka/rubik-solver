@@ -1,0 +1,27 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Django
+db.sqlite3
+staticfiles/
+media/
+
+# Environments
+.env
+.env.*
+
+# IDE
+.idea/
+.vscode/
+
+# Testing
+.pytest_cache/
+
+# System
+.DS_Store
+Thumbs.db

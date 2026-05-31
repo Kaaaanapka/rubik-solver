@@ -1,0 +1,5 @@
+;time_s;time_s;time_s;time_s;time_s;length_htm;length_htm;length_htm;length_htm;length_qtm;length_qtm;length_qtm;length_qtm;TPS;TPS;TPS
+;count;mean;median;min;max;mean;median;min;max;mean;median;min;max;mean;median;max
+method;;;;;;;;;;;;;;;;
+Kociemba;15;28.8768;28.432;22.451;36.875;20.4;20.0;20;21;28.333333333333332;28.0;27;32;0.717944942970341;0.7054673721340388;0.9171907756813417
+LBL;77;101.5834025974026;99.56;63.23;149.487;36.97402597402598;0.0;0;187;39.23376623376623;0.0;0;190;0.3045608111485107;0.0;1.398467023934069
