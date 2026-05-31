@@ -1,4 +1,5 @@
 # Python
+.venv/
 **/.venv/
 __pycache__/
 *.pyc
@@ -21,6 +22,8 @@ media/
 
 # Testing
 .pytest_cache/
+htmlcov/
+.coverage
 
 # System
 .DS_Store
