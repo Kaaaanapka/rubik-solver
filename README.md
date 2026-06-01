@@ -1,56 +1,60 @@
 # Rubik Cube Solver App
 
-A desktop application for interacting with, analyzing, and solving the Rubik’s Cube using manual input, camera-based color detection, and an optimal solving algorithm.
+⚠️ Project Status: Under active development (some features are experimental)
+
+A Python-based application for interacting with and solving the Rubik’s Cube using manual input, camera-assisted color detection, and an external solving algorithm.
 
 ---
 
 ## 🚀 Features
 
 ### 🎮 GUI Interface
-- Manual input of Rubik’s Cube colors via visual cube layout
+- Manual input of Rubik’s Cube colors via a visual cube layout
 - Reset functionality
-- Controls for solving and session management
+- Basic controls for solving and session handling
 
 ### 📷 Camera-Based Color Detection
 - Integration with external camera sources (e.g. DroidCam)
 - Region of Interest (ROI) detection for extracting cube face colors (`roi.py`)
-- Detection of 3x3 cube stickers from live video stream
-- Planned improvement: full automatic cube reconstruction
+- Detection of 3x3 cube stickers from video stream (basic implementation)
+- Experimental feature (not fully automated yet)
 
 ### 🔀 Scramble Generator
-- Generates official-style Rubik’s Cube scrambles
-- Uses Singmaster notation (R, U, R', U', etc.)
+- Generates Rubik’s Cube scrambles using Singmaster notation (R, U, R', U', etc.)
 
 ### ⏱ Timer & Move Tracking
-- Speedcubing timer system
+- Simple speedcubing timer
 - Manual move input tracking (notation-based)
 - Stores solve sessions and move history
 
 ### 💾 Data Storage
-- Saves solve sessions
+- Saves solve sessions locally
 - Stores move sequences for later analysis
-- Supports export to structured formats (e.g. Excel / database)
+- Basic export support (e.g. Excel / database format)
+
+### 🌐 Backend API
+- Built with Django and Django REST Framework
+- Provides endpoints for processing cube data and solving requests
+- Communication layer between GUI and backend logic
 
 ---
 
 ## 🧠 Core Solving Engine
 
-This project uses the **Kociemba Two-Phase Algorithm** for solving the Rubik’s Cube in optimal or near-optimal solutions (typically ~19 moves).
+This project uses the **Kociemba Two-Phase Algorithm** to generate efficient solutions for the Rubik’s Cube (typically around ~19 moves in optimal cases).
 
-The implementation is based on:
+Based on:
 
 https://github.com/hkociemba/RubiksCube-TwophaseSolver
-
-This solver is widely used in professional cube-solving systems and provides efficient optimal solutions.
 
 ---
 
 ## 🛠 Tech Stack
 
 - Python
-- OpenCV (computer vision)
-- Django / REST API (backend logic)
-- GUI framework (Tkinter / PyQt)
+- Django + Django REST Framework (backend API)
+- OpenCV
+- Tkinter / PyQt (GUI)
 - NumPy / Pandas
 - RubikTwoPhase (Kociemba solver)
 
@@ -59,24 +63,28 @@ This solver is widely used in professional cube-solving systems and provides eff
 ## 📁 Project Structure
 
 - `src/` – main application code
-  - `client/` – GUI (user interface, gui.py)
+  - `client/` – GUI application (gui.py)
 
-- `legacy/` – old or deprecated code (kept for reference)
-- `scripts/` – helper scripts (setup, utilities, experiments)
+- `legacy/` – older or experimental code kept for reference
+- `scripts/` – helper utilities and scripts
 
 - `requirements.txt` – project dependencies
-- `README.md` – project documentation
+- `README.md` – documentation
 - `LICENSE` – project license (GPLv3)
-- `.gitignore` – ignored files and folders
+- `.gitignore` – ignored files
+
+---
 
 ## ▶️ How to Run
 
-### Backend
+### Backend (Django server)
+```bash
 python manage.py runserver
-
-### GUI
+```
+### GUI (client application)
+```bash
 python client/gui.py
-
+```
 ## 📌 Future Improvements
 - Full automatic cube reconstruction from camera input
 - Improved color recognition using machine learning
