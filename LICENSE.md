@@ -1,7 +1,7 @@
 
 ---
 
-# 📄 `LICENSE`
+## 📄 `LICENSE`
 
 ```text
 GNU GENERAL PUBLIC LICENSE
