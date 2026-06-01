@@ -58,12 +58,14 @@ This solver is widely used in professional cube-solving systems and provides eff
 
 ## 📁 Project Structure
 
-src/
-├── manage.py
-├── client/
-│ └── gui.py
-├── roi.py
-├── (additional modules: scramble, timer, storage, etc.)
+- `src/` – main application code
+-- `client` - cointains gui.py main user interface
+- `legacy/` – old or deprecated code (kept for reference)
+- `scripts/` – helper scripts (setup, utilities, experiments)
+- `requirements.txt` – project dependencies
+- `README.md` – project documentation
+- `LICENSE` – project license (GPLv3)
+- `.gitignore` – ignored files and folders
 
 ## ▶️ How to Run
 
