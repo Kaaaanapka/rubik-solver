@@ -79,18 +79,18 @@ python manage.py runserver
 ### GUI
 python client/gui.py
 
-📌 Future Improvements
+## 📌 Future Improvements
 - Full automatic cube reconstruction from camera input
 - Improved color recognition using machine learning
 - Web-based interface version
 - Performance benchmarking of solving algorithms
 - Better integration between GUI and camera module
 
-👤 Author
+## 👤 Author
 
 Kamil Miodowski
 
-📄 License
+## 📄 License
 
 This project uses the Rubik’s Cube Two-Phase Solver
 based on the Kociemba algorithm.
