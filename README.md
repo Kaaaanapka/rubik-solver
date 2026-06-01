@@ -58,10 +58,14 @@ This solver is widely used in professional cube-solving systems and provides eff
 
 ## 📁 Project Structure
 
+## 📁 Project Structure
+
 - `src/` – main application code
--- `client` - cointains gui.py main user interface
+  - `client/` – GUI (user interface, gui.py)
+
 - `legacy/` – old or deprecated code (kept for reference)
 - `scripts/` – helper scripts (setup, utilities, experiments)
+
 - `requirements.txt` – project dependencies
 - `README.md` – project documentation
 - `LICENSE` – project license (GPLv3)
