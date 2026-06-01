@@ -58,8 +58,6 @@ This solver is widely used in professional cube-solving systems and provides eff
 
 ## 📁 Project Structure
 
-## 📁 Project Structure
-
 - `src/` – main application code
   - `client/` – GUI (user interface, gui.py)
 
