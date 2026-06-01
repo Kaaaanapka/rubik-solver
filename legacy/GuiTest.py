@@ -1,6 +1,6 @@
 import tkinter as tk
 from kamera import uruchom_kamere
-from facelet import naklejka
+from _legacy.facelet import naklejka
 from kociemba import Kociemba
 from kolory import kolor_scianek, mapowanie_kolorow
 import random

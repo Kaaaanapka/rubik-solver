@@ -1,6 +1,6 @@
 import tkinter as tk
 from kamera import uruchom_kamere
-from facelet import naklejka
+from _legacy.facelet import naklejka
 
 
 # Funkcja do generowania faceletów na każdej ściance
