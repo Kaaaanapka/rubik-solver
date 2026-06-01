@@ -1,10 +1,11 @@
 # Rubik Cube Solver App
 
-⚠️ Project Status: Under active development (some features are experimental)
-
 A Python-based application for interacting with and solving the Rubik’s Cube using manual input, camera-assisted color detection, and an external solving algorithm.
 
 ---
+
+## ⚠️ Status
+This project is under active development and some features are experimental.
 
 ## 🚀 Features
 
